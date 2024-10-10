@@ -27,3 +27,5 @@ This repository is a collection of payloads and wordlists that can be used for p
   - [SecLists](https://github.com/danielmiessler/SecLists)
   - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
   - [Owasp](https://owasp.org/)
+
+  - copyRight @ https://github.com/InfoSecWarrior/Offensive-Payloads/blob/main/Html-Injection-Payloads.txt
