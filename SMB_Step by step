@@ -1,0 +1,6 @@
+Kiểm tra SMB signing
+  nmap -p445 --script smb-security-mode <IP>
+Kiểm tra SMB sessions
+    nmap -p445 --script smb-enum-sessions <IP>
+Kiểm tra SMB shared
+  map -p445 --script smb-enum-shares <IP>
