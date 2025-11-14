@@ -7,6 +7,8 @@
 ✗ http://lvh.me:1337/                   # DNS tricks - BỊ CHẶN
 ✗ http://[::ffff:127.0.0.1]:1337/       # IPv4-mapped IPv6 - BỊ CHẶN
 ✗ http://external.com → 302 → localhost # Redirect - BỊ CHẶN
+http://[::ffff:7f00:1]:1337/flag
+http://[0:0:0:0:0:ffff:7f00:1]:1337/flag
 
 http://127.0.0.1/
 http://127.0.0.1:22/
